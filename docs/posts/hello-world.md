@@ -15,3 +15,18 @@ metus tristique pellentesque. Suspendisse viverra urna in accumsan aliquet.
 <!-- more -->
 
 full content here...
+
+and here's a code block:
+
+```kotlin
+sealed interface Instruction {
+    data class Add(val value: Int) : Instruction
+    object NoOp : Instruction
+}
+
+private fun String.parseInstruction() = when {
+    this == "noop" -> Instruction.NoOp
+    startsWith("addx") -> Instruction.Add(substringAfter("addx ").toInt())
+    else -> error("Unhandled instruction")
+}
+```
