@@ -1,4 +1,36 @@
-site_name: rileymichael.com
+site_name: rileymichael
+site_author: rileymichael
+site_url: https://rileymichael.com
 
 theme:
   name: material
+  language: en
+  logo: 'img/closing-tag.png'
+  favicon: 'img/closing-tag.png'
+  palette:
+    scheme: slate
+
+# todo: rss
+plugins:
+  - search
+  - blog:
+      blog_dir: .
+      archive: false
+      categories: false
+nav:
+  - index.md
+  - about.md
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/rileymichael_
+    - icon: fontawesome/brands/github
+      link: https://github.com/rileymichael
