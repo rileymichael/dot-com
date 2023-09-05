@@ -8,10 +8,14 @@ theme:
   logo: 'img/closing-tag.png'
   favicon: 'img/closing-tag.png'
   palette:
-    scheme: slate
+    scheme: default
+    primary: white
   features:
     - content.code.copy
     - content.code.annotate
+
+extra_css:
+  - 'css/style.css'
 
 # todo: rss
 plugins:
