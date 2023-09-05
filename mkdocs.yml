@@ -9,6 +9,9 @@ theme:
   favicon: 'img/closing-tag.png'
   palette:
     scheme: slate
+  features:
+    - content.code.copy
+    - content.code.annotate
 
 # todo: rss
 plugins:

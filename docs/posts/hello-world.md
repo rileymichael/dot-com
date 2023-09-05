@@ -19,7 +19,7 @@ full content here...
 and here's a code block:
 
 ```kotlin
-sealed interface Instruction {
+sealed interface Instruction { // (1)!
     data class Add(val value: Int) : Instruction
     object NoOp : Instruction
 }
@@ -30,3 +30,5 @@ private fun String.parseInstruction() = when {
     else -> error("Unhandled instruction")
 }
 ```
+
+1. using the sealed modifier allows us to exhaustively handle instructions
