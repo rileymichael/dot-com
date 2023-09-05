@@ -21,6 +21,7 @@ extra_css:
 plugins:
   - search
   - blog:
+      post_url_format: "{slug}"
       blog_dir: .
       archive: false
       categories: false
